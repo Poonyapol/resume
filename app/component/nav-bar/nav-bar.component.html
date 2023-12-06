@@ -1,0 +1,12 @@
+
+<div class="p-3 bg-black text-light nav">
+     <span class="text-light p-2 font-weight pointer item">RESUME</span>
+    <ng-container *ngFor="let menu of manus;">
+       <span class="text-light p-2 font-weight pointer item "
+             [class.is-activate]="menu.path === path"
+             (click)="goToNabigatePath(menu.path)"> {{menu.name}}
+       </span>
+      </ng-container>
+  </div>
+
+

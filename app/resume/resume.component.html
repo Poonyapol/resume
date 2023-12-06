@@ -1,0 +1,130 @@
+<div class="row">
+  <div class="col-12 d-flex justify-content-center">
+      <img
+    src="assets/image/profile.jpg"
+    class="rounded-circle"
+    alt=""
+    width="160px"
+    height="160px"
+  />
+  </div>
+  <div class="col-12 mt-3">
+         <h5 class="text-center ">Profile Poonyapol Srerachadagorn</h5>
+  </div>
+  <hr>
+  <div class="col-12">
+    <!-- Experience Section-->
+                        <section>
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h2 class="text-secondary fw-bolder mb-0">Internships</h2>
+                                <!-- Download resume button-->
+                                <!-- Note: Set the link href target to a PDF file within your project-->
+                                <a class="btn btn-secondary px-4 py-3" (click)="openNewTab()" target="_blank">
+                                    <div class="d-inline-block bi bi-download me-2"></div>
+                                    Download Resume
+                                </a>
+                            </div>
+                            <!-- Experience Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-primary fw-bolder mb-2">Dec, 2020 - May, 2021</div>
+                                                <div class="small fw-bolder">Backend Developer</div>g
+                                                <div class="small text-muted">Codium</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8"><div>Siam@Siam Hotel Building ,  7th Floor 865 Rama 1 Road ,  Wang Mai, Patumwan  Bangkok 10330, Thailand</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+    <h2 class="text-secondary fw-bolder mb-4">Education</h2>
+    <ng-container *ngFor="let ed of educationList;">
+      <div class="card shadow border-0 rounded-4 mb-5">
+        <div class="card-body p-5">
+          <div class="row align-items-center gx-5">
+            <div class="row align-items-center gx-5">
+              <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                <div class="bg-light p-4 rounded-4">
+                  <div class="text-secondary fw-bolder mb-2">{{ed.year}}</div>
+                  <div class="mb-2">
+                    <div class="small fw-bolder">{{ed.university}}</div>
+                    <div class="small text-muted">{{ed.province}}</div>
+                    <div class="fst-italic">
+                      <div class="small text-muted">{{ed.major}}</div>
+                      <div class="small text-muted">{{ed.leveleducation}}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 text-center">
+                        <img src="{{ed.img}}"
+                             class="rounded-fluid"
+                             alt=""
+                             width= "200px"
+                             height="200px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+                        <!-- Education Section-->
+<!--                        <section>-->
+<!--                            <h2 class="text-secondary fw-bolder mb-4">Education</h2>-->
+<!--                            &lt;!&ndash; Education Card 1&ndash;&gt;-->
+<!--                            <div class="card shadow border-0 rounded-4 mb-5">-->
+<!--                                <div class="card-body p-5">-->
+<!--                                    <div class="row align-items-center gx-5">-->
+<!--                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">-->
+<!--                                            <div class="bg-light p-4 rounded-4">-->
+<!--                                                <div class="text-secondary fw-bolder mb-2">2014 - 2016</div>-->
+<!--                                                <div class="mb-2">-->
+<!--                                                    <div class="small fw-bolder">Saard Phaderm Wittaya School</div>-->
+<!--                                                    <div class="small text-muted">Chumphon</div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                      <div class="col-lg-4 text-center">-->
+<!--                                        <img src="assets/image/saardlogov2.png"-->
+<!--                                        class="rounded-fluid"-->
+<!--                                              alt=""-->
+<!--                                              width= "300px"-->
+<!--                                              height="300px">-->
+<!--                                      </div>-->
+<!--                                      </div>-->
+<!--                                    </div>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; Education Card 2&ndash;&gt;-->
+<!--                            <div class="card shadow border-0 rounded-4 mb-5">-->
+<!--                                <div class="card-body p-5">-->
+<!--                                    <div class="row align-items-center gx-5">-->
+<!--                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">-->
+<!--                                            <div class="bg-light p-4 rounded-4">-->
+<!--                                                <div class="text-secondary fw-bolder mb-2">2017 - 2022</div>-->
+<!--                                                <div class="mb-2">-->
+<!--                                                    <div class="small fw-bolder">Rangsit University, Computer Science</div>-->
+<!--                                                    <div class="small text-muted">Pathumthani</div>-->
+<!--                                                </div>-->
+<!--                                                <div class="fst-italic">-->
+<!--                                                    <div class="small text-muted">Undergraduate</div>-->
+<!--                                                    <div class="small text-muted">Computer Science</div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="col-lg-4 text-center">-->
+<!--                                          <img src="assets/image/logo.jpg"-->
+<!--                                              class="rounded-fluid"-->
+<!--                                              alt=""-->
+<!--                                              width= "300px"-->
+<!--                                              height="300px">-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </section>-->
+
+                    </div>
+</div>

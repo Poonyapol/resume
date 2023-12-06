@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+.main-box {
+  height: calc(100vh - 100px);
+  padding: 1rem;
+  background: white;
+  border-radius: 6px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: auto;
+}
+
+body {
+  background: lightgray;
+  overflow-x: hidden;
+  padding-top: 3rem;
+}
